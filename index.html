@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- IMPORTANT: Amazon CDN Image Block Fix -->
     <meta name="referrer" content="no-referrer">
     
     <title>NovaZone - Top Trending Amazon Deals & Smart Essentials</title>
@@ -51,6 +50,8 @@
         let currentPage = 1;
         const itemsPerPage = 20;
 
+        const fallbackImage = "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='180' viewBox='0 0 200 180'><rect width='100%' height='100%' fill='%23f4f6f9'/><text x='50%' y='50%' dominant-baseline='middle' text-anchor='middle' fill='%23888' font-family='sans-serif' font-size='14'>Amazon Product</text></svg>";
+
         async function loadDeals() {
             try {
                 const response = await fetch('deals.json');
@@ -74,7 +75,7 @@
                 const card = document.createElement('div');
                 card.className = 'deal-card';
                 card.innerHTML = `
-                    <img src="${deal.image}" alt="${deal.title}" loading="lazy" onerror="this.closest('.deal-card').remove();">
+                    <img src="${deal.image}" alt="${deal.title}" loading="lazy" onerror="this.onerror=null; this.src='${fallbackImage}';">
                     <h3>${deal.title}</h3>
                     <p class="price">${deal.price}</p>
                     <a href="${deal.link}" target="_blank" class="buy-btn">Buy Now</a>
