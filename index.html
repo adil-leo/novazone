@@ -3,13 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaZone - Best Amazon Deals & Essentials</title>
+    <title>NovaZone - Top Trending Amazon Deals & Smart Essentials</title>
+    <meta name="description" content="Discover top trending Amazon deals on Tech Gadgets, Home Appliances, Beauty, and Fashion updated daily with Google Trends analysis.">
+    <meta name="keywords" content="Amazon deals, trending tech, best home gadgets, beauty deals, fashion discounts">
+    
+    <!-- OpenGraph / Social SEO -->
+    <meta property="og:title" content="NovaZone - Top Trending Amazon Deals">
+    <meta property="og:description" content="Handpicked daily trending Amazon deals across Tech, Home, Beauty & Fashion.">
+    <meta property="og:type" content="website">
+
+    <!-- Schema.org JSON-LD SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "NovaZone",
+      "url": "https://adil-leo.github.io/novazone/",
+      "description": "Daily automated Amazon trending deals aggregator"
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>NovaZone</h1>
-        <p>Top Amazon Tech, Home, Beauty & Fashion Deals</p>
+        <p>Google Trends Powered Amazon Deals</p>
     </header>
 
     <nav class="categories">
@@ -20,55 +39,80 @@
         <button class="tab-btn" onclick="filterCategory('fashion')">👕 Fashion</button>
     </nav>
 
-    <main id="deals-container" class="grid-container">
-        <!-- Deals will load here dynamically -->
-    </main>
+    <main id="deals-container" class="grid-container"></main>
+
+    <!-- Pagination Controls -->
+    <div class="pagination">
+        <button id="prev-btn" onclick="changePage(-1)">Previous</button>
+        <span id="page-num">Page 1</span>
+        <button id="next-btn" onclick="changePage(1)">Next</button>
+    </div>
 
     <footer>
-        <p>&copy; 2026 NovaZone. As an Amazon Associate, 
-            All Rights Reserved.
-        </p>
+        <p>&copy; 2026 NovaZone. As an Amazon Associate, All Rights Reserved.</p>
     </footer>
 
     <script>
-        let allDeals = [];
+        let currentDeals = [];
+        let currentPage = 1;
+        const itemsPerPage = 6;
 
         async function loadDeals() {
             try {
                 const response = await fetch('deals.json');
-                allDeals = await response.json();
-                displayDeals(allDeals);
+                currentDeals = await response.json();
+                renderPage();
             } catch (error) {
                 console.error('Error loading deals:', error);
             }
         }
 
-        function displayDeals(deals) {
+        function renderPage() {
             const container = document.getElementById('deals-container');
             container.innerHTML = '';
-            deals.forEach(deal => {
+
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const paginatedItems = currentDeals.slice(start, end);
+
+            paginatedItems.forEach(deal => {
                 const card = document.createElement('div');
                 card.className = 'deal-card';
                 card.innerHTML = `
-                    <img src="${deal.image}" alt="${deal.title}">
+                    <img src="${deal.image}" alt="${deal.title}" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://images-na.ssl-images-amazon.com/images/I/01RmK%2BJ4pJL.gif';">
                     <h3>${deal.title}</h3>
                     <p class="price">${deal.price}</p>
-                    <a href="${deal.link}?tag=fastbuyzone-20" target="_blank" class="buy-btn">View on Amazon</a>
+                    <a href="${deal.link}" target="_blank" class="buy-btn">View on Amazon</a>
                 `;
                 container.appendChild(card);
             });
+
+            document.getElementById('page-num').innerText = `Page ${currentPage} of ${Math.ceil(currentDeals.length / itemsPerPage) || 1}`;
+            document.getElementById('prev-btn').disabled = currentPage === 1;
+            document.getElementById('next-btn').disabled = end >= currentDeals.length;
+        }
+
+        function changePage(direction) {
+            currentPage += direction;
+            renderPage();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
         function filterCategory(category) {
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
             
-            if (category === 'all') {
-                displayDeals(allDeals);
-            } else {
-                const filtered = allDeals.filter(deal => deal.category === category);
-                displayDeals(filtered);
-            }
+            fetch('deals.json')
+                .then(res => res.json())
+                .then(data => {
+                    if (category === 'all') {
+                        currentDeals = data;
+                    } else {
+                        currentDeals = data.filter(deal => deal.category === category);
+                    }
+                    currentPage = 1;
+                    renderPage();
+                });
         }
 
         loadDeals();
