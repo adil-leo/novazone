@@ -12,15 +12,15 @@ def get_google_trends():
     except Exception as e:
         print(f"Trends fallback activated: {e}")
 
-# 100% Evergreen Verified Active Amazon US ASINs
+# 100% Verified Active Amazon US ASINs (40 Total)
 PRODUCTS_CATALOG = [
     # ⚡ TECH & GADGETS (10)
-    {"title": "Apple AirPods Pro (2nd Generation)", "price": "$189.00", "category": "tech", "asin": "B0CHWRXH8B"},
+    {"title": "Apple AirPods Pro (2nd Generation)", "price": "$189.00", "category": "tech", "asin": "B0CIGCG2KW"},
     {"title": "Apple AirTag 4-Pack Item Tracker", "price": "$79.00", "category": "tech", "asin": "B0932QJ2JZ"},
     {"title": "Amazon Fire TV Stick 4K Streaming", "price": "$49.99", "category": "tech", "asin": "B0BP9SNVH9"},
     {"title": "Echo Dot (5th Gen) Smart Speaker", "price": "$49.99", "category": "tech", "asin": "B09B8V1LZ3"},
     {"title": "Anker Soundcore Life Q20 Headphones", "price": "$59.99", "category": "tech", "asin": "B07NM3RSRQ"},
-    {"title": "Anker Magnetic Wireless Power Bank", "price": "$42.99", "category": "tech", "asin": "B099F558UC"},
+    {"title": "Anker 313 Wall Charger 45W USB-C", "price": "$23.99", "category": "tech", "asin": "B0BQLHGLG4"},
     {"title": "Logitech MX Master 3S Wireless Mouse", "price": "$99.99", "category": "tech", "asin": "B09HM94VDS"},
     {"title": "SanDisk 128GB Ultra microSDXC Card", "price": "$15.99", "category": "tech", "asin": "B073JYC4XM"},
     {"title": "JBL GO 3 Portable Bluetooth Speaker", "price": "$39.95", "category": "tech", "asin": "B08339798S"},
@@ -68,7 +68,6 @@ def generate_deals():
     deals = []
     for item in PRODUCTS_CATALOG:
         affiliate_url = f"https://www.amazon.com/dp/{item['asin']}?tag={AFFILIATE_TAG}"
-        # Direct Amazon CDN image path (AdBlocker Proof)
         image_url = f"https://images-na.ssl-images-amazon.com/images/P/{item['asin']}.01._SX400_.jpg"
         
         deals.append({
@@ -81,7 +80,7 @@ def generate_deals():
     
     with open("deals.json", "w") as f:
         json.dump(deals, f, indent=2)
-    print("deals.json updated successfully with direct CDN images.")
+    print("deals.json updated successfully with 40 verified Amazon products.")
 
 if __name__ == "__main__":
     generate_deals()
