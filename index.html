@@ -4,14 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
-    
-    <title>NovaZone - Top Trending Amazon Deals & Smart Essentials</title>
-    <meta name="description" content="Discover top trending Amazon deals updated daily.">
-    <meta name="keywords" content="Amazon deals, trending tech, kitchen gadgets, beauty deals, fashion, shoes, baby toys">
-    
-    <!-- FAVICON -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛍️</text></svg>">
-
+    <title>NovaZone - Top Trending Amazon Deals</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +13,7 @@
             <span class="logo-badge">⚡</span>
             <h1>NovaZone</h1>
         </div>
-        <p>Google Trends Powered Amazon Deals</p>
+        <p>Trending Products & Smart Everyday Essentials</p>
     </header>
 
     <nav class="categories">
@@ -28,15 +21,14 @@
         <button class="tab-btn" onclick="filterCategory('tech')">⚡ Tech</button>
         <button class="tab-btn" onclick="filterCategory('kitchen')">🍳 Kitchen</button>
         <button class="tab-btn" onclick="filterCategory('beauty')">💄 Beauty</button>
-        <button class="tab-btn" onclick="filterCategory('fashion')">👗 Dresses</button>
+        <button class="tab-btn" onclick="filterCategory('fashion')">👗 Fashion & Dresses</button>
         <button class="tab-btn" onclick="filterCategory('shoes')">👟 Shoes</button>
         <button class="tab-btn" onclick="filterCategory('toys')">🧸 Baby Toys</button>
-        <button class="tab-btn" onclick="filterCategory('essentials')">🩲 Undergarments</button>
+        <button class="tab-btn" onclick="filterCategory('innerwear')">🩲 Innerwear & Lingerie</button>
     </nav>
 
     <main id="deals-container" class="grid-container"></main>
 
-    <!-- Pagination Controls -->
     <div class="pagination">
         <button id="prev-btn" onclick="changePage(-1)">Previous</button>
         <span id="page-num">Page 1</span>
@@ -72,14 +64,14 @@
             const end = start + itemsPerPage;
             const paginatedItems = filteredDeals.slice(start, end);
 
-            paginatedItems.forEach((deal, idx) => {
+            paginatedItems.forEach((deal) => {
                 const card = document.createElement('div');
                 card.className = 'deal-card';
                 card.innerHTML = `
-                    <img src="${deal.image}" alt="${deal.title}" loading="lazy" onerror="this.onerror=null; this.src='https://picsum.photos/seed/${deal.category}${idx}/500/500';">
+                    <img src="${deal.image}" alt="${deal.title}" referrerpolicy="no-referrer" loading="lazy">
                     <h3>${deal.title}</h3>
                     <p class="price">${deal.price}</p>
-                    <a href="${deal.link}" target="_blank" class="buy-btn">Buy Now</a>
+                    <a href="${deal.link}" target="_blank" rel="noopener noreferrer" class="buy-btn">Buy on Amazon</a>
                 `;
                 container.appendChild(card);
             });
@@ -97,7 +89,7 @@
 
         function filterCategory(category) {
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
+            if(event) event.target.classList.add('active');
             
             if (category === 'all') {
                 filteredDeals = [...allDeals];
