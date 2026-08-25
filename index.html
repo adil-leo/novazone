@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaZone - Top Trending Amazon Deals & Smart Essentials</title>
-    <meta name="description" content="Discover top trending Amazon deals on Tech Gadgets, Home Appliances, Beauty, and Fashion updated daily with Google Trends analysis.">
+    <meta name="description" content="Discover top trending Amazon deals on Tech Gadgets, Home Appliances, Beauty, and Fashion updated daily.">
     <meta name="keywords" content="Amazon deals, trending tech, best home gadgets, beauty deals, fashion discounts">
     
-    <!-- OpenGraph / Social SEO -->
+    <!-- OpenGraph SEO -->
     <meta property="og:title" content="NovaZone - Top Trending Amazon Deals">
     <meta property="og:description" content="Handpicked daily trending Amazon deals across Tech, Home, Beauty & Fashion.">
     <meta property="og:type" content="website">
@@ -49,7 +49,7 @@
     </div>
 
     <footer>
-        <p>&copy; 2026 NovaZone. As an Amazon Associate, All Rights Reserved.</p>
+        <p>&copy; 2026 NovaZone. As an Amazon Associate, we earn from qualifying purchases.</p>
     </footer>
 
     <script>
@@ -79,7 +79,7 @@
                 const card = document.createElement('div');
                 card.className = 'deal-card';
                 card.innerHTML = `
-                    <img src="${deal.image}" alt="${deal.title}" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://images-na.ssl-images-amazon.com/images/I/01RmK%2BJ4pJL.gif';">
+                    <img src="${deal.image}" alt="${deal.title}" loading="lazy">
                     <h3>${deal.title}</h3>
                     <p class="price">${deal.price}</p>
                     <a href="${deal.link}" target="_blank" class="buy-btn">View on Amazon</a>
