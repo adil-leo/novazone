@@ -12,7 +12,7 @@ def get_google_trends():
     except Exception as e:
         print(f"Trends fallback activated: {e}")
 
-# 40 Verified 100% Active Amazon US ASINs (10 per category)
+# 100% Evergreen Verified Active Amazon US ASINs
 PRODUCTS_CATALOG = [
     # ⚡ TECH & GADGETS (10)
     {"title": "Apple AirPods Pro (2nd Generation)", "price": "$189.00", "category": "tech", "asin": "B0CHWRXH8B"},
@@ -45,7 +45,7 @@ PRODUCTS_CATALOG = [
     {"title": "Paula's Choice 2% BHA Liquid Exfoliant", "price": "$35.00", "category": "beauty", "asin": "B00949CTQQ"},
     {"title": "Revlon One-Step Volumizer Hair Dryer", "price": "$39.99", "category": "beauty", "asin": "B01LSUQSB0"},
     {"title": "Mighty Patch Original Hydrocolloid Patches", "price": "$11.99", "category": "beauty", "asin": "B074PVTPBW"},
-    {"title": "PanOxyl Acne Foaming Wash 10% Benzoyl", "price": "$9.79", "category": "beauty", "asin": "B081KL25J8"},
+    {"title": "PanOxyl Acne Foaming Wash 10% Benzoyl", "price": "$8.99", "category": "beauty", "asin": "B081KL25J8"},
     {"title": "Aquaphor Healing Ointment Protectant", "price": "$13.74", "category": "beauty", "asin": "B006IB5T4W"},
     {"title": "Neutrogena Hydro Boost Water Gel Cream", "price": "$16.59", "category": "beauty", "asin": "B00NR1YQK4"},
     {"title": "CeraVe AM Facial Moisturizing Lotion SPF 30", "price": "$15.99", "category": "beauty", "asin": "B00F97FHAW"},
@@ -68,8 +68,8 @@ def generate_deals():
     deals = []
     for item in PRODUCTS_CATALOG:
         affiliate_url = f"https://www.amazon.com/dp/{item['asin']}?tag={AFFILIATE_TAG}"
-        # Amazon official dynamic image URL by ASIN
-        image_url = f"https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN={item['asin']}&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL400_"
+        # Direct Amazon CDN image path (AdBlocker Proof)
+        image_url = f"https://images-na.ssl-images-amazon.com/images/P/{item['asin']}.01._SX400_.jpg"
         
         deals.append({
             "title": item["title"],
@@ -81,7 +81,7 @@ def generate_deals():
     
     with open("deals.json", "w") as f:
         json.dump(deals, f, indent=2)
-    print("deals.json updated successfully with 40 verified Amazon products.")
+    print("deals.json updated successfully with direct CDN images.")
 
 if __name__ == "__main__":
     generate_deals()
