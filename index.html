@@ -3,28 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- IMPORTANT: Amazon CDN Image Block Fix -->
+    <meta name="referrer" content="no-referrer">
+    
     <title>NovaZone - Top Trending Amazon Deals & Smart Essentials</title>
-    <meta name="description" content="Discover top trending Amazon deals on Tech Gadgets, Home Appliances, Beauty, and Fashion updated daily.">
+    <meta name="description" content="Discover top trending Amazon deals updated daily.">
     <meta name="keywords" content="Amazon deals, trending tech, best home gadgets, beauty deals, fashion discounts">
     
-    <!-- FAVICON (Browser Tab Icon) -->
+    <!-- FAVICON -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛍️</text></svg>">
-
-    <!-- OpenGraph SEO -->
-    <meta property="og:title" content="NovaZone - Top Trending Amazon Deals">
-    <meta property="og:description" content="Handpicked daily trending Amazon deals across Tech, Home, Beauty & Fashion.">
-    <meta property="og:type" content="website">
-
-    <!-- Schema.org JSON-LD SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "NovaZone",
-      "url": "https://adil-leo.github.io/novazone/",
-      "description": "Daily automated Amazon trending deals aggregator"
-    }
-    </script>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -59,14 +46,16 @@
     </footer>
 
     <script>
-        let currentDeals = [];
+        let allDeals = [];
+        let filteredDeals = [];
         let currentPage = 1;
         const itemsPerPage = 20;
 
         async function loadDeals() {
             try {
                 const response = await fetch('deals.json');
-                currentDeals = await response.json();
+                allDeals = await response.json();
+                filteredDeals = [...allDeals];
                 renderPage();
             } catch (error) {
                 console.error('Error loading deals:', error);
@@ -79,13 +68,13 @@
 
             const start = (currentPage - 1) * itemsPerPage;
             const end = start + itemsPerPage;
-            const paginatedItems = currentDeals.slice(start, end);
+            const paginatedItems = filteredDeals.slice(start, end);
 
             paginatedItems.forEach(deal => {
                 const card = document.createElement('div');
                 card.className = 'deal-card';
                 card.innerHTML = `
-                    <img src="${deal.image}" alt="${deal.title}" loading="lazy">
+                    <img src="${deal.image}" alt="${deal.title}" loading="lazy" onerror="this.closest('.deal-card').remove();">
                     <h3>${deal.title}</h3>
                     <p class="price">${deal.price}</p>
                     <a href="${deal.link}" target="_blank" class="buy-btn">Buy Now</a>
@@ -93,9 +82,9 @@
                 container.appendChild(card);
             });
 
-            document.getElementById('page-num').innerText = `Page ${currentPage} of ${Math.ceil(currentDeals.length / itemsPerPage) || 1}`;
+            document.getElementById('page-num').innerText = `Page ${currentPage} of ${Math.ceil(filteredDeals.length / itemsPerPage) || 1}`;
             document.getElementById('prev-btn').disabled = currentPage === 1;
-            document.getElementById('next-btn').disabled = end >= currentDeals.length;
+            document.getElementById('next-btn').disabled = end >= filteredDeals.length;
         }
 
         function changePage(direction) {
@@ -108,17 +97,13 @@
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
             event.target.classList.add('active');
             
-            fetch('deals.json')
-                .then(res => res.json())
-                .then(data => {
-                    if (category === 'all') {
-                        currentDeals = data;
-                    } else {
-                        currentDeals = data.filter(deal => deal.category === category);
-                    }
-                    currentPage = 1;
-                    renderPage();
-                });
+            if (category === 'all') {
+                filteredDeals = [...allDeals];
+            } else {
+                filteredDeals = allDeals.filter(deal => deal.category === category);
+            }
+            currentPage = 1;
+            renderPage();
         }
 
         loadDeals();
