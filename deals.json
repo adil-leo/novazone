@@ -21,20 +21,6 @@
     "link": "https://www.amazon.com/dp/B0BP9SNVH9?tag=fastbuyzone-20"
   },
   {
-    "title": "Echo Dot Smart Speaker",
-    "price": "$49.99",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1543512214-318c7553f230?w=500&q=80",
-    "link": "https://www.amazon.com/dp/B09B8V1LZ3?tag=fastbuyzone-20"
-  },
-  {
-    "title": "Anker Wireless Noise Cancelling Headphones",
-    "price": "$59.99",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=80",
-    "link": "https://www.amazon.com/dp/B07NM3RSRQ?tag=fastbuyzone-20"
-  },
-  {
     "title": "Logitech MX Master 3S Wireless Mouse",
     "price": "$99.99",
     "category": "tech",
@@ -42,25 +28,11 @@
     "link": "https://www.amazon.com/dp/B09HM94VDS?tag=fastbuyzone-20"
   },
   {
-    "title": "JBL GO 3 Portable Bluetooth Speaker",
-    "price": "$39.95",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&q=80",
-    "link": "https://www.amazon.com/dp/B08339798S?tag=fastbuyzone-20"
-  },
-  {
     "title": "Keurig K-Mini Single Serve Coffee Maker",
     "price": "$59.99",
     "category": "home",
     "image": "https://images.unsplash.com/photo-1517668808822-9ebb02f2a0e6?w=500&q=80",
     "link": "https://www.amazon.com/dp/B0748J593C?tag=fastbuyzone-20"
-  },
-  {
-    "title": "Fullstar Vegetable Chopper 4-in-1",
-    "price": "$29.99",
-    "category": "home",
-    "image": "https://images.unsplash.com/photo-1584269600464-37b1b58a9fe7?w=500&q=80",
-    "link": "https://www.amazon.com/dp/B0764HS49D?tag=fastbuyzone-20"
   },
   {
     "title": "Ninja Air Fryer 4-Quart Capacity",
@@ -91,24 +63,59 @@
     "link": "https://www.amazon.com/dp/B01MSSDEPK?tag=fastbuyzone-20"
   },
   {
-    "title": "Revlon One-Step Hair Dryer Brush",
-    "price": "$39.99",
-    "category": "beauty",
-    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&q=80",
-    "link": "https://www.amazon.com/dp/B01LSUQSB0?tag=fastbuyzone-20"
+    "title": "Women's Casual Summer Floral Maxi Dress",
+    "price": "$38.99",
+    "category": "fashion",
+    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&q=80",
+    "link": "https://www.amazon.com/dp/B08728F9LL?tag=fastbuyzone-20"
   },
   {
-    "title": "Carhartt Men's Knit Cuffed Beanie Hat",
-    "price": "$19.99",
+    "title": "Men's Slim Fit Casual Button-Down Shirt",
+    "price": "$29.99",
     "category": "fashion",
-    "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?w=500&q=80",
-    "link": "https://www.amazon.com/dp/B002G9UDYG?tag=fastbuyzone-20"
+    "image": "https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=500&q=80",
+    "link": "https://www.amazon.com/dp/B00JUM2W2O?tag=fastbuyzone-20"
   },
   {
-    "title": "Crocs Unisex Classic Clogs",
-    "price": "$39.99",
-    "category": "fashion",
-    "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?w=500&q=80",
+    "title": "Men's Light Weight Running Sneakers",
+    "price": "$45.99",
+    "category": "shoes",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=80",
     "link": "https://www.amazon.com/dp/B0014C5S7S?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Women's Comfort Casual Walking Shoes",
+    "price": "$39.99",
+    "category": "shoes",
+    "image": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&q=80",
+    "link": "https://www.amazon.com/dp/B0014C5S7S?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Montessori Wooden Educational Baby Toy Set",
+    "price": "$24.99",
+    "category": "toys",
+    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=500&q=80",
+    "link": "https://www.amazon.com/dp/B074PVTPBW?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Soft Elephant Stuffed Animal Plush Toy",
+    "price": "$16.99",
+    "category": "toys",
+    "image": "https://images.unsplash.com/photo-1559715745-e1b34a25e88f?w=500&q=80",
+    "link": "https://www.amazon.com/dp/B074PVTPBW?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Men's Cotton Boxer Briefs Underwear (5-Pack)",
+    "price": "$24.98",
+    "category": "essentials",
+    "image": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&q=80",
+    "link": "https://www.amazon.com/dp/B07C64HQV8?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Women's Seamless Soft Comfort Everyday Bra",
+    "price": "$21.99",
+    "category": "essentials",
+    "image": "https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&q=80",
+    "link": "https://www.amazon.com/dp/B07C64HQV8?tag=fastbuyzone-20"
   }
 ]
