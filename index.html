@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NovaZone - Top Trending Amazon Deals</title>
     <meta name="description" content="Discover top trending Amazon deals updated daily.">
-    
-    <!-- FAVICON -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛍️</text></svg>">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -71,13 +69,25 @@
                 const card = document.createElement('div');
                 card.className = 'deal-card';
                 card.innerHTML = `
-                    <img src="${deal.image}" 
-                         alt="${deal.title}" 
-                         loading="lazy"
-                         onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500&auto=format&fit=crop';">
-                    <h3>${deal.title}</h3>
-                    <p class="price">${deal.price}</p>
-                    <a href="${deal.link}" target="_blank" rel="noopener noreferrer" class="buy-btn">Buy on Amazon</a>
+                    <div class="img-box">
+                        <img src="${deal.image}" alt="${deal.title}" loading="lazy">
+                    </div>
+                    <div>
+                        <div class="brand-name">${deal.brand || 'AMAZON'}</div>
+                        <h3 class="product-title">${deal.title}</h3>
+                        <div class="rating-box">
+                            <span class="stars">★ ${deal.rating || '4.6'}</span>
+                            <span class="review-count">(${deal.reviews || '10K'})</span>
+                        </div>
+                        <div class="bought-text">${deal.bought || '10K+ bought in past month'}</div>
+                        <div class="price-box">
+                            ${deal.price}
+                            ${deal.listPrice ? `<span class="list-price">List: ${deal.listPrice}</span>` : ''}
+                        </div>
+                        <div class="delivery-text">Delivery <strong>${deal.delivery || 'Fast Delivery'}</strong></div>
+                        <div class="ship-text">Eligible for International Shipping</div>
+                    </div>
+                    <a href="${deal.link}" target="_blank" rel="noopener noreferrer" class="buy-btn">View on Amazon</a>
                 `;
                 container.appendChild(card);
             });

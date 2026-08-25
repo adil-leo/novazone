@@ -1,177 +1,119 @@
 [
   {
-    "title": "Apple AirPods Pro 2nd Generation Wireless Earbuds",
-    "price": "$189.00",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Apple+AirPods+Pro+2nd+Generation"
-  },
-  {
-    "title": "Apple AirTag 4-Pack Item Finder",
-    "price": "$79.00",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1628172962388-3720f4c2f16a?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Apple+AirTag+4+Pack"
-  },
-  {
-    "title": "Amazon Fire TV Stick 4K Streaming Media Player",
-    "price": "$49.99",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Amazon+Fire+TV+Stick+4K"
-  },
-  {
-    "title": "Logitech MX Master 3S Wireless Performance Mouse",
-    "price": "$99.99",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Logitech+MX+Master+3S"
-  },
-  {
-    "title": "JBL GO 3 Waterproof Portable Bluetooth Speaker",
-    "price": "$39.95",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=JBL+GO+3+Speaker"
-  },
-  {
-    "title": "Anker 45W Ultra-Fast USB-C Wall Charger",
-    "price": "$23.99",
-    "category": "tech",
-    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Anker+45W+USB+C+Charger"
-  },
-  {
-    "title": "Keurig K-Mini Single Serve Coffee Maker",
-    "price": "$59.99",
-    "category": "kitchen",
-    "image": "https://images.unsplash.com/photo-1517668808822-9fea0282b941?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Keurig+K+Mini+Coffee+Maker"
-  },
-  {
-    "title": "Fullstar Vegetable Chopper & Spiralizer 4-in-1",
-    "price": "$29.99",
-    "category": "kitchen",
-    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Fullstar+Vegetable+Chopper"
-  },
-  {
-    "title": "Ninja 4-Quart High Performance Air Fryer",
-    "price": "$89.99",
-    "category": "kitchen",
-    "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Ninja+4+Quart+Air+Fryer"
-  },
-  {
-    "title": "Stanley Quencher H2.0 FlowState Tumbler 40oz",
-    "price": "$45.00",
-    "category": "kitchen",
-    "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Stanley+Quencher+40oz+Tumbler"
-  },
-  {
-    "title": "COSRX Advanced Snail 96 Mucin Power Essence",
-    "price": "$14.99",
-    "category": "beauty",
-    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=COSRX+Snail+Mucin+Essence"
-  },
-  {
-    "title": "CeraVe Hydrating Facial Cleanser 16oz Daily Wash",
-    "price": "$15.49",
+    "title": "6X Peptide Collagen Skin Booster Toner Serum for Dull Skin, 5.07 oz",
+    "brand": "COSRX",
+    "price": "$21.00",
+    "listPrice": "$25.00",
+    "rating": "4.6",
+    "reviews": "12.6K",
+    "bought": "10K+ bought in past month",
+    "delivery": "Thu, Sep 3",
     "category": "beauty",
     "image": "https://images.unsplash.com/photo-1608248597359-0e6d52899480?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=CeraVe+Hydrating+Facial+Cleanser"
+    "link": "https://www.amazon.com/s?k=COSRX+6X+Peptide+Collagen+Skin+Booster&tag=fastbuyzone2o-20"
   },
   {
-    "title": "LANEIGE Lip Sleeping Mask Hydrating Treatment",
-    "price": "$24.00",
+    "title": "AirPods Pro (2nd Generation) Wireless Earbuds with USB-C Charging",
+    "brand": "APPLE",
+    "price": "$189.00",
+    "listPrice": "$249.00",
+    "rating": "4.7",
+    "reviews": "145K",
+    "bought": "50K+ bought in past month",
+    "delivery": "Tomorrow",
+    "category": "tech",
+    "image": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=500&auto=format&fit=crop",
+    "link": "https://www.amazon.com/s?k=Apple+AirPods+Pro+2nd+Generation&tag=fastbuyzone2o-20"
+  },
+  {
+    "title": "AirTag 4-Pack Precision Finding Bluetooth Item Tracker",
+    "brand": "APPLE",
+    "price": "$79.00",
+    "listPrice": "$99.00",
+    "rating": "4.8",
+    "reviews": "210K",
+    "bought": "30K+ bought in past month",
+    "delivery": "Wed, Sep 2",
+    "category": "tech",
+    "image": "https://images.unsplash.com/photo-1628172962388-3720f4c2f16a?w=500&auto=format&fit=crop",
+    "link": "https://www.amazon.com/s?k=Apple+AirTag+4+Pack&tag=fastbuyzone2o-20"
+  },
+  {
+    "title": "Fire TV Stick 4K Streaming Media Player with Alexa Voice Remote",
+    "brand": "AMAZON",
+    "price": "$49.99",
+    "listPrice": "$59.99",
+    "rating": "4.6",
+    "reviews": "98K",
+    "bought": "20K+ bought in past month",
+    "delivery": "Thu, Sep 3",
+    "category": "tech",
+    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500&auto=format&fit=crop",
+    "link": "https://www.amazon.com/s?k=Amazon+Fire+TV+Stick+4K&tag=fastbuyzone2o-20"
+  },
+  {
+    "title": "MX Master 3S Wireless Performance Mouse with Quiet Clicks",
+    "brand": "LOGITECH",
+    "price": "$99.99",
+    "listPrice": "$109.99",
+    "rating": "4.7",
+    "reviews": "18K",
+    "bought": "5K+ bought in past month",
+    "delivery": "Fri, Sep 4",
+    "category": "tech",
+    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500&auto=format&fit=crop",
+    "link": "https://www.amazon.com/s?k=Logitech+MX+Master+3S&tag=fastbuyzone2o-20"
+  },
+  {
+    "title": "K-Mini Single Serve K-Cup Pod Coffee Maker 6 to 12 oz",
+    "brand": "KEURIG",
+    "price": "$59.99",
+    "listPrice": "$99.99",
+    "rating": "4.5",
+    "reviews": "85K",
+    "bought": "15K+ bought in past month",
+    "delivery": "Wed, Sep 2",
+    "category": "kitchen",
+    "image": "https://images.unsplash.com/photo-1517668808822-9fea0282b941?w=500&auto=format&fit=crop",
+    "link": "https://www.amazon.com/s?k=Keurig+K+Mini+Coffee+Maker&tag=fastbuyzone2o-20"
+  },
+  {
+    "title": "Quencher H2.0 FlowState Stainless Steel Vacuum Insulated Tumbler 40oz",
+    "brand": "STANLEY",
+    "price": "$45.00",
+    "listPrice": "$50.00",
+    "rating": "4.7",
+    "reviews": "42K",
+    "bought": "40K+ bought in past month",
+    "delivery": "Thu, Sep 3",
+    "category": "kitchen",
+    "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=500&auto=format&fit=crop",
+    "link": "https://www.amazon.com/s?k=Stanley+Quencher+40oz+Tumbler&tag=fastbuyzone2o-20"
+  },
+  {
+    "title": "Advanced Snail 96 Mucin Power Essence Hydrating Serum",
+    "brand": "COSRX",
+    "price": "$14.99",
+    "listPrice": "$25.00",
+    "rating": "4.6",
+    "reviews": "72K",
+    "bought": "60K+ bought in past month",
+    "delivery": "Tomorrow",
     "category": "beauty",
-    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=LANEIGE+Lip+Sleeping+Mask"
+    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&auto=format&fit=crop",
+    "link": "https://www.amazon.com/s?k=COSRX+Snail+Mucin+Essence&tag=fastbuyzone2o-20"
   },
   {
-    "title": "Paula's Choice Skin Perfecting 2% BHA Liquid Exfoliant",
-    "price": "$35.00",
-    "category": "beauty",
-    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Paulas+Choice+2+BHA+Liquid"
-  },
-  {
-    "title": "Women's Casual Summer Floral Print Sundress",
-    "price": "$38.99",
-    "category": "fashion",
-    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Womens+Summer+Floral+Maxi+Dress"
-  },
-  {
-    "title": "Carhartt Men's Knit Cuffed Beanie Warm Cap",
-    "price": "$19.99",
-    "category": "fashion",
-    "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Carhartt+Knit+Cuffed+Beanie"
-  },
-  {
-    "title": "Champion Men's Powerblend Heavy Duty Fleece Hoodie",
-    "price": "$35.00",
-    "category": "fashion",
-    "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Champion+Mens+Fleece+Hoodie"
-  },
-  {
-    "title": "Men's Lightweight Athletic Running Sneakers",
-    "price": "$45.99",
-    "category": "shoes",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Mens+Lightweight+Running+Shoes"
-  },
-  {
-    "title": "Crocs Unisex Classic Comfort Slip-On Clogs",
-    "price": "$39.99",
-    "category": "shoes",
-    "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Crocs+Unisex+Classic+Clogs"
-  },
-  {
-    "title": "Montessori Wooden Educational Baby Sorting Toy Set",
-    "price": "$24.99",
-    "category": "toys",
-    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Montessori+Wooden+Educational+Baby+Toy"
-  },
-  {
-    "title": "Soft Cute Elephant Stuffed Animal Plush Toy",
-    "price": "$16.99",
-    "category": "toys",
-    "image": "https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Soft+Elephant+Plush+Toy"
-  },
-  {
-    "title": "Women's Seamless Everyday Comfort Bralette Set",
+    "title": "Women's Seamless Soft Wireless Bralette Comfort Everyday Set",
+    "brand": "CALVIN KLEIN",
     "price": "$21.99",
+    "listPrice": "$30.00",
+    "rating": "4.4",
+    "reviews": "11K",
+    "bought": "4K+ bought in past month",
+    "delivery": "Fri, Sep 4",
     "category": "innerwear",
     "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Womens+Seamless+Bralette+Set"
-  },
-  {
-    "title": "Women's Soft Breathable Cotton Panties 6-Pack",
-    "price": "$18.99",
-    "category": "innerwear",
-    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Womens+Cotton+Panties+6+Pack"
-  },
-  {
-    "title": "Men's Stretch Cotton Boxer Briefs 5-Pack",
-    "price": "$24.98",
-    "category": "innerwear",
-    "image": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Mens+Cotton+Boxer+Briefs"
-  },
-  {
-    "title": "Women's Nylon Fishnet Patterned Tights & Stockings",
-    "price": "$12.99",
-    "category": "innerwear",
-    "image": "https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop",
-    "link": "https://www.amazon.com/s?k=Womens+Fishnet+Tights+Stockings"
+    "link": "https://www.amazon.com/s?k=Womens+Seamless+Bralette+Set&tag=fastbuyzone2o-20"
   }
 ]
