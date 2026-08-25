@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaZone - Best Amazon Deals & Essentials</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NovaZone</h1>
+        <p>Curated Amazon Tech, Home, Beauty & Fashion Deals</p>
+    </header>
+
+    <nav class="categories">
+        <button class="tab-btn active" onclick="filterCategory('all')">All Deals</button>
+        <button class="tab-btn" onclick="filterCategory('tech')">⚡ Tech & Gadgets</button>
+        <button class="tab-btn" onclick="filterCategory('home')">🏠 Home & Kitchen</button>
+        <button class="tab-btn" onclick="filterCategory('beauty')">💄 Beauty & Care</button>
+        <button class="tab-btn" onclick="filterCategory('fashion')">👕 Fashion</button>
+    </nav>
+
+    <main id="deals-container" class="grid-container">
+        <!-- Deals will load here dynamically -->
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NovaZone. As an Amazon Associate, we earn from qualifying purchases.</p>
+    </footer>
+
+    <script>
+        let allDeals = [];
+
+        async function loadDeals() {
+            try {
+                const response = await fetch('deals.json');
+                allDeals = await response.json();
+                displayDeals(allDeals);
+            } catch (error) {
+                console.error('Error loading deals:', error);
+            }
+        }
+
+        function displayDeals(deals) {
+            const container = document.getElementById('deals-container');
+            container.innerHTML = '';
+            deals.forEach(deal => {
+                const card = document.createElement('div');
+                card.className = 'deal-card';
+                card.innerHTML = `
+                    <img src="${deal.image}" alt="${deal.title}">
+                    <h3>${deal.title}</h3>
+                    <p class="price">${deal.price}</p>
+                    <a href="${deal.link}?tag=fastbuyzone-20" target="_blank" class="buy-btn">View on Amazon</a>
+                `;
+                container.appendChild(card);
+            });
+        }
+
+        function filterCategory(category) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            if (category === 'all') {
+                displayDeals(allDeals);
+            } else {
+                const filtered = allDeals.filter(deal => deal.category === category);
+                displayDeals(filtered);
+            }
+        }
+
+        loadDeals();
+    </script>
+</body>
+</html>

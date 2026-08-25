@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Wireless Noise Cancelling Headphones",
+    "price": "$59.99",
+    "category": "tech",
+    "image": "https://m.media-amazon.com/images/I/61SUj2aKoEL._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B07V347Vmk"
+  },
+  {
+    "title": "Smart LED Desk Lamp with USB Charging Port",
+    "price": "$29.99",
+    "category": "home",
+    "image": "https://m.media-amazon.com/images/I/61XW9vO3V2L._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B0855W4H5W"
+  },
+  {
+    "title": "Ionic Hair Dryer Professional Blow Dryer",
+    "price": "$39.99",
+    "category": "beauty",
+    "image": "https://m.media-amazon.com/images/I/51w92h5a8nL._AC_SL1000_.jpg",
+    "link": "https://www.amazon.com/dp/B099238XYZ"
+  },
+  {
+    "title": "Minimalist Casual Crossbody Bag",
+    "price": "$22.50",
+    "category": "fashion",
+    "image": "https://m.media-amazon.com/images/I/71xyzABN2CL._AC_UY695_.jpg",
+    "link": "https://www.amazon.com/dp/B07XYZ1234"
+  }
+]
