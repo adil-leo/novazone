@@ -3,29 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaZone - Top Trending Amazon Deals</title>
-    <meta name="description" content="Discover top trending Amazon deals updated daily.">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛍️</text></svg>">
+    <title>NovaZone - Amazon Deals</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <span class="logo-badge">⚡</span>
-            <h1>NovaZone</h1>
+            <h1>⚡ NovaZone</h1>
         </div>
-        <p>Trending Products & Smart Everyday Essentials</p>
+        <p>Top Trending Deals Updated Daily</p>
     </header>
 
     <nav class="categories">
-        <button class="tab-btn active" onclick="filterCategory('all')">All Deals</button>
-        <button class="tab-btn" onclick="filterCategory('tech')">⚡ Tech</button>
-        <button class="tab-btn" onclick="filterCategory('kitchen')">🍳 Kitchen</button>
-        <button class="tab-btn" onclick="filterCategory('beauty')">💄 Beauty</button>
-        <button class="tab-btn" onclick="filterCategory('fashion')">👗 Fashion</button>
-        <button class="tab-btn" onclick="filterCategory('shoes')">👟 Shoes</button>
-        <button class="tab-btn" onclick="filterCategory('toys')">🧸 Baby Toys</button>
-        <button class="tab-btn" onclick="filterCategory('innerwear')">🩲 Innerwear & Lingerie</button>
+        <button class="tab-btn active" onclick="filterCategory('all', event)">All Deals</button>
+        <button class="tab-btn" onclick="filterCategory('tech', event)">⚡ Tech</button>
+        <button class="tab-btn" onclick="filterCategory('kitchen', event)">🍳 Kitchen</button>
+        <button class="tab-btn" onclick="filterCategory('beauty', event)">💄 Beauty</button>
+        <button class="tab-btn" onclick="filterCategory('fashion', event)">👗 Fashion</button>
+        <button class="tab-btn" onclick="filterCategory('shoes', event)">👟 Shoes</button>
+        <button class="tab-btn" onclick="filterCategory('toys', event)">🧸 Baby Toys</button>
+        <button class="tab-btn" onclick="filterCategory('innerwear', event)">🩲 Innerwear</button>
     </nav>
 
     <main id="deals-container" class="grid-container"></main>
@@ -70,24 +67,15 @@
                 card.className = 'deal-card';
                 card.innerHTML = `
                     <div class="img-box">
-                        <img src="${deal.image}" alt="${deal.title}" loading="lazy">
+                        <img src="${deal.image}" alt="${deal.title}" loading="lazy" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=500';">
                     </div>
                     <div>
                         <div class="brand-name">${deal.brand || 'AMAZON'}</div>
-                        <h3 class="product-title">${deal.title}</h3>
-                        <div class="rating-box">
-                            <span class="stars">★ ${deal.rating || '4.6'}</span>
-                            <span class="review-count">(${deal.reviews || '10K'})</span>
-                        </div>
-                        <div class="bought-text">${deal.bought || '10K+ bought in past month'}</div>
-                        <div class="price-box">
-                            ${deal.price}
-                            ${deal.listPrice ? `<span class="list-price">List: ${deal.listPrice}</span>` : ''}
-                        </div>
-                        <div class="delivery-text">Delivery <strong>${deal.delivery || 'Fast Delivery'}</strong></div>
-                        <div class="ship-text">Eligible for International Shipping</div>
+                        <h3 class="product-title" title="${deal.title}">${deal.title}</h3>
+                        <div class="rating-box">★ ${deal.rating || '4.6'} (${deal.reviews || '10K'})</div>
+                        <div class="price-box">${deal.price}</div>
                     </div>
-                    <a href="${deal.link}" target="_blank" rel="noopener noreferrer" class="buy-btn">View on Amazon</a>
+                    <a href="${deal.link}" target="_blank" rel="noopener noreferrer" class="buy-btn">Buy on Amazon</a>
                 `;
                 container.appendChild(card);
             });
@@ -103,9 +91,9 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
 
-        function filterCategory(category) {
+        function filterCategory(category, e) {
             document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
-            if(event && event.target) event.target.classList.add('active');
+            if(e && e.target) e.target.classList.add('active');
             
             if (category === 'all') {
                 filteredDeals = [...allDeals];
