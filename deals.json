@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Anker Magnetic Wireless Power Bank",
+    "price": "$39.99",
+    "category": "tech",
+    "image": "https://m.media-amazon.com/images/I/61m3J4m0ZEL._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B099F558UC?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Logitech MX Master 3S Wireless Mouse",
+    "price": "$99.99",
+    "category": "tech",
+    "image": "https://m.media-amazon.com/images/I/61ni3t1ryQL._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B09HM94VDS?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Blink Mini 2 Smart Security Camera",
+    "price": "$39.99",
+    "category": "tech",
+    "image": "https://m.media-amazon.com/images/I/51Ie1Oa-ZpL._AC_SL1000_.jpg",
+    "link": "https://www.amazon.com/dp/B0BGH8F13Z?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Keurig K-Express Coffee Maker",
+    "price": "$69.99",
+    "category": "home",
+    "image": "https://m.media-amazon.com/images/I/61KxGThUeeL._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B0934S587L?tag=fastbuyzone-20"
+  },
+  {
+    "title": "COSRX Snail Mucin 96% Power Essence",
+    "price": "$14.99",
+    "category": "beauty",
+    "image": "https://m.media-amazon.com/images/I/51A1b2Vp-LL._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B00PBX3L7K?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Fullstar Vegetable Chopper & Slicer",
+    "price": "$29.99",
+    "category": "home",
+    "image": "https://m.media-amazon.com/images/I/81x1C63g6tL._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B089KXC91G?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Laneige Lip Sleeping Mask",
+    "price": "$24.00",
+    "category": "beauty",
+    "image": "https://m.media-amazon.com/images/I/61m8uSTh3eL._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B07XXPHC33?tag=fastbuyzone-20"
+  },
+  {
+    "title": "CeraVe Hydrating Facial Cleanser",
+    "price": "$15.49",
+    "category": "beauty",
+    "image": "https://m.media-amazon.com/images/I/71R3yL2qj1L._AC_SL1500_.jpg",
+    "link": "https://www.amazon.com/dp/B01MSSDEPK?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Carhartt Men's Knit Cuffed Beanie",
+    "price": "$19.99",
+    "category": "fashion",
+    "image": "https://m.media-amazon.com/images/I/81P8s+wz4BL._AC_SX679_.jpg",
+    "link": "https://www.amazon.com/dp/B002G9UDYG?tag=fastbuyzone-20"
+  },
+  {
+    "title": "JW PEI Women's Gabbi Shoulder Bag",
+    "price": "$79.99",
+    "category": "fashion",
+    "image": "https://m.media-amazon.com/images/I/61J2xL40IHL._AC_UY695_.jpg",
+    "link": "https://www.amazon.com/dp/B08728F9LL?tag=fastbuyzone-20"
+  }
+]
