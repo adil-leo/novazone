@@ -1,252 +1,282 @@
 [
   {
-    "title": "COSRX 6X Peptide Collagen Skin Booster Serum 5.07 oz",
-    "brand": "COSRX",
-    "price": "$21.00",
-    "category": "beauty",
-    "rating": "4.6",
-    "reviews": "12.6K",
-    "image": "https://images.unsplash.com/photo-1608248597359-0e6d52899480?w=500",
-    "link": "https://www.amazon.com/dp/B0C7Z4W2N7?tag=fastbuyzone2o-20"
-  },
-  {
-    "title": "Apple AirPods Pro 2nd Gen Wireless Earbuds",
-    "brand": "APPLE",
+    "title": "Apple AirPods Pro (2nd Generation)",
     "price": "$189.00",
     "category": "tech",
-    "rating": "4.7",
-    "reviews": "145K",
-    "image": "https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=500",
-    "link": "https://www.amazon.com/dp/B0BDHWDR12?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0CIGCG2KW.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0CIGCG2KW?tag=fastbuyzone-20"
   },
   {
-    "title": "Apple AirTag 4-Pack Item Finder",
-    "brand": "APPLE",
+    "title": "Apple AirTag 4-Pack Item Tracker",
     "price": "$79.00",
     "category": "tech",
-    "rating": "4.8",
-    "reviews": "210K",
-    "image": "https://images.unsplash.com/photo-1628172962388-3720f4c2f16a?w=500",
-    "link": "https://www.amazon.com/dp/B0932QJ2JZ?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0932QJ2JZ.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0932QJ2JZ?tag=fastbuyzone-20"
   },
   {
-    "title": "Amazon Fire TV Stick 4K Streaming Media Player",
-    "brand": "AMAZON",
+    "title": "Amazon Fire TV Stick 4K Streaming",
     "price": "$49.99",
     "category": "tech",
-    "rating": "4.6",
-    "reviews": "98K",
-    "image": "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=500",
-    "link": "https://www.amazon.com/dp/B08XW4FD2B?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0BP9SNVH9.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0BP9SNVH9?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Echo Dot (5th Gen) Smart Speaker",
+    "price": "$49.99",
+    "category": "tech",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B09B8V1LZ3.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B09B8V1LZ3?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Anker Soundcore Life Q20 Headphones",
+    "price": "$59.99",
+    "category": "tech",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07NM3RSRQ.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B07NM3RSRQ?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Anker 313 Wall Charger 45W USB-C",
+    "price": "$23.99",
+    "category": "tech",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0BQLHGLG4.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0BQLHGLG4?tag=fastbuyzone-20"
   },
   {
     "title": "Logitech MX Master 3S Wireless Mouse",
-    "brand": "LOGITECH",
     "price": "$99.99",
     "category": "tech",
-    "rating": "4.7",
-    "reviews": "18K",
-    "image": "https://images.unsplash.com/photo-1615663245857-ac93bb7c39e7?w=500",
-    "link": "https://www.amazon.com/dp/B09HM94VDS?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B09HM94VDS.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B09HM94VDS?tag=fastbuyzone-20"
   },
   {
-    "title": "JBL GO 3 Waterproof Portable Bluetooth Speaker",
-    "brand": "JBL",
+    "title": "SanDisk 128GB Ultra microSDXC Card",
+    "price": "$15.99",
+    "category": "tech",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B073JYC4XM.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B073JYC4XM?tag=fastbuyzone-20"
+  },
+  {
+    "title": "JBL GO 3 Portable Bluetooth Speaker",
     "price": "$39.95",
     "category": "tech",
-    "rating": "4.8",
-    "reviews": "55K",
-    "image": "https://images.unsplash.com/photo-1545454675-3531b543be5d?w=500",
-    "link": "https://www.amazon.com/dp/B08KH6C4B9?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B08339798S.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B08339798S?tag=fastbuyzone-20"
   },
   {
-    "title": "Anker 45W Ultra-Fast USB-C Charger",
-    "brand": "ANKER",
-    "price": "$23.99",
+    "title": "Blink Mini Indoor Smart Security Camera",
+    "price": "$34.99",
     "category": "tech",
-    "rating": "4.6",
-    "reviews": "14K",
-    "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?w=500",
-    "link": "https://www.amazon.com/dp/B0BQLHGLG4?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07X6C9RMF.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B07X6C9RMF?tag=fastbuyzone-20"
   },
   {
     "title": "Keurig K-Mini Single Serve Coffee Maker",
-    "brand": "KEURIG",
     "price": "$59.99",
-    "category": "kitchen",
-    "rating": "4.5",
-    "reviews": "85K",
-    "image": "https://images.unsplash.com/photo-1517668808822-9fea0282b941?w=500",
-    "link": "https://www.amazon.com/dp/B07DVZCL7H?tag=fastbuyzone2o-20"
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0748J593C.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0748J593C?tag=fastbuyzone-20"
   },
   {
-    "title": "Fullstar Vegetable Chopper & Spiralizer 4-in-1",
-    "brand": "FULLSTAR",
+    "title": "Fullstar Vegetable Chopper 4-in-1",
     "price": "$29.99",
-    "category": "kitchen",
-    "rating": "4.6",
-    "reviews": "110K",
-    "image": "https://images.unsplash.com/photo-1585515320310-259814833e62?w=500",
-    "link": "https://www.amazon.com/dp/B0764HS44K?tag=fastbuyzone2o-20"
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0764HS49D.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0764HS49D?tag=fastbuyzone-20"
   },
   {
-    "title": "Ninja 4-Quart Air Fryer",
-    "brand": "NINJA",
+    "title": "BISSELL Little Green Carpet Cleaner",
+    "price": "$123.59",
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0016HF5GK.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0016HF5GK?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Ninja Air Fryer 4-Quart Capacity",
     "price": "$89.99",
-    "category": "kitchen",
-    "rating": "4.8",
-    "reviews": "65K",
-    "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?w=500",
-    "link": "https://www.amazon.com/dp/B07FDJMC9Q?tag=fastbuyzone2o-20"
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07FDJMC99.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B07FDJMC99?tag=fastbuyzone-20"
   },
   {
-    "title": "Stanley Quencher H2.0 Tumbler 40oz",
-    "brand": "STANLEY",
+    "title": "Stanley Quencher H2.0 40oz Tumbler",
     "price": "$45.00",
-    "category": "kitchen",
-    "rating": "4.7",
-    "reviews": "42K",
-    "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=500",
-    "link": "https://www.amazon.com/dp/B0BN293S7W?tag=fastbuyzone2o-20"
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0BN3G3J5Z.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0BN3G3J5Z?tag=fastbuyzone-20"
   },
   {
-    "title": "COSRX Advanced Snail 96 Mucin Essence",
-    "brand": "COSRX",
+    "title": "COSORI Air Fryer 5-Quart Compact",
+    "price": "$99.99",
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07GJBBGHG.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B07GJBBGHG?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Rubbermaid Brilliance Food Containers 10-Pc",
+    "price": "$22.99",
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B01JCNEJVQ.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B01JCNEJVQ?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Dash Mini Waffle Maker Machine",
+    "price": "$12.99",
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B011M4JFFI.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B011M4JFFI?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Instant Pot Duo 7-in-1 Pressure Cooker",
+    "price": "$79.99",
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B00FLYWNYQ.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B00FLYWNYQ?tag=fastbuyzone-20"
+  },
+  {
+    "title": "KitchenAid Silicone Oven Mitts Pair",
+    "price": "$18.99",
+    "category": "home",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B00G33L7E2.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B00G33L7E2?tag=fastbuyzone-20"
+  },
+  {
+    "title": "COSRX Snail Mucin 96% Repairing Essence",
     "price": "$14.99",
     "category": "beauty",
-    "rating": "4.6",
-    "reviews": "72K",
-    "image": "https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500",
-    "link": "https://www.amazon.com/dp/B00PBX3L7K?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B00PBX3L7K.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B00PBX3L7K?tag=fastbuyzone-20"
   },
   {
     "title": "CeraVe Hydrating Facial Cleanser 16oz",
-    "brand": "CERAVE",
     "price": "$15.49",
     "category": "beauty",
-    "rating": "4.7",
-    "reviews": "95K",
-    "image": "https://images.unsplash.com/photo-1608248597359-0e6d52899480?w=500",
-    "link": "https://www.amazon.com/dp/B01MSSDEPK?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B01MSSDEPK.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B01MSSDEPK?tag=fastbuyzone-20"
   },
   {
-    "title": "LANEIGE Lip Sleeping Mask Hydrating Treatment",
-    "brand": "LANEIGE",
+    "title": "LANEIGE Lip Sleeping Mask Treatment",
     "price": "$24.00",
     "category": "beauty",
-    "rating": "4.7",
-    "reviews": "38K",
-    "image": "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500",
-    "link": "https://www.amazon.com/dp/B07XXPHRL2?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07XXPHC33.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B07XXPHC33?tag=fastbuyzone-20"
   },
   {
     "title": "Paula's Choice 2% BHA Liquid Exfoliant",
-    "brand": "PAULA'S CHOICE",
     "price": "$35.00",
     "category": "beauty",
-    "rating": "4.6",
-    "reviews": "88K",
-    "image": "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500",
-    "link": "https://www.amazon.com/dp/B00949CTQQ?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B00949CTQQ.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B00949CTQQ?tag=fastbuyzone-20"
   },
   {
-    "title": "Women's Casual Summer Floral Print Sundress",
-    "brand": "ANRABESS",
-    "price": "$38.99",
-    "category": "fashion",
-    "rating": "4.4",
-    "reviews": "15K",
-    "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=500",
-    "link": "https://www.amazon.com/dp/B09NVX8S9L?tag=fastbuyzone2o-20"
+    "title": "Revlon One-Step Volumizer Hair Dryer",
+    "price": "$39.99",
+    "category": "beauty",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B01LSUQSB0.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B01LSUQSB0?tag=fastbuyzone-20"
   },
   {
-    "title": "Carhartt Men's Knit Cuffed Beanie Cap",
-    "brand": "CARHARTT",
+    "title": "Mighty Patch Original Hydrocolloid Patches",
+    "price": "$11.99",
+    "category": "beauty",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B074PVTPBW.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B074PVTPBW?tag=fastbuyzone-20"
+  },
+  {
+    "title": "PanOxyl Acne Foaming Wash 10% Benzoyl",
+    "price": "$8.99",
+    "category": "beauty",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B081KL25J8.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B081KL25J8?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Aquaphor Healing Ointment Protectant",
+    "price": "$13.74",
+    "category": "beauty",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B006IB5T4W.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B006IB5T4W?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Neutrogena Hydro Boost Water Gel Cream",
+    "price": "$16.59",
+    "category": "beauty",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B00NR1YQK4.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B00NR1YQK4?tag=fastbuyzone-20"
+  },
+  {
+    "title": "CeraVe AM Facial Moisturizing Lotion SPF 30",
+    "price": "$15.99",
+    "category": "beauty",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B00F97FHAW.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B00F97FHAW?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Carhartt Men's Knit Cuffed Beanie Hat",
     "price": "$19.99",
     "category": "fashion",
-    "rating": "4.8",
-    "reviews": "160K",
-    "image": "https://images.unsplash.com/photo-1576871337622-98d48d1cf531?w=500",
-    "link": "https://www.amazon.com/dp/B002G9UDYG?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B002G9UDYG.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B002G9UDYG?tag=fastbuyzone-20"
+  },
+  {
+    "title": "Crocs Unisex Classic Clogs Slip-On",
+    "price": "$39.99",
+    "category": "fashion",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0014C5S7S.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0014C5S7S?tag=fastbuyzone-20"
   },
   {
     "title": "Champion Men's Powerblend Fleece Hoodie",
-    "brand": "CHAMPION",
     "price": "$35.00",
     "category": "fashion",
-    "rating": "4.6",
-    "reviews": "54K",
-    "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=500",
-    "link": "https://www.amazon.com/dp/B01HI041J0?tag=fastbuyzone2o-20"
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B01HI2T070.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B01HI2T070?tag=fastbuyzone-20"
   },
   {
-    "title": "Men's Lightweight Athletic Running Shoes",
-    "brand": "FEETHIT",
-    "price": "$45.99",
-    "category": "shoes",
-    "rating": "4.3",
-    "reviews": "28K",
-    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
-    "link": "https://www.amazon.com/dp/B085VZZP48?tag=fastbuyzone2o-20"
+    "title": "Hanes Men's EcoSmart Fleece Sweatshirt",
+    "price": "$14.00",
+    "category": "fashion",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B00JUM2W2O.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B00JUM2W2O?tag=fastbuyzone-20"
   },
   {
-    "title": "Crocs Unisex Classic Comfort Slip-On Clogs",
-    "brand": "CROCS",
-    "price": "$39.99",
-    "category": "shoes",
-    "rating": "4.8",
-    "reviews": "500K",
-    "image": "https://images.unsplash.com/photo-1603252109303-2751441dd157?w=500",
-    "link": "https://www.amazon.com/dp/B0014C5S9O?tag=fastbuyzone2o-20"
+    "title": "Fruit of the Loom Men's Coolzone Boxers 5-Pk",
+    "price": "$19.98",
+    "category": "fashion",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B07C64HQV8.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B07C64HQV8?tag=fastbuyzone-20"
   },
   {
-    "title": "Montessori Wooden Educational Baby Sorting Toy",
-    "brand": "MONTESSORI",
-    "price": "$24.99",
-    "category": "toys",
-    "rating": "4.7",
-    "reviews": "9K",
-    "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=500",
-    "link": "https://www.amazon.com/dp/B09V7N8D31?tag=fastbuyzone2o-20"
+    "title": "Gildan Adult Ultra Cotton T-Shirt 2-Pack",
+    "price": "$12.99",
+    "category": "fashion",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0002FHJTG.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0002FHJTG?tag=fastbuyzone-20"
   },
   {
-    "title": "Soft Cute Elephant Stuffed Animal Plush Toy",
-    "brand": "BEDTIME ORIGINALS",
+    "title": "Timberland Men's Passcase Leather Wallet",
     "price": "$16.99",
-    "category": "toys",
-    "rating": "4.8",
-    "reviews": "34K",
-    "image": "https://images.unsplash.com/photo-1559454403-b8fb88521f11?w=500",
-    "link": "https://www.amazon.com/dp/B00L2K28LW?tag=fastbuyzone2o-20"
+    "category": "fashion",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B004SME50A.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B004SME50A?tag=fastbuyzone-20"
   },
   {
-    "title": "Women's Seamless Soft Bralette Set",
-    "brand": "CALVIN KLEIN",
-    "price": "$21.99",
-    "category": "innerwear",
-    "rating": "4.4",
-    "reviews": "11K",
-    "image": "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?w=500",
-    "link": "https://www.amazon.com/dp/B083Q4NWG4?tag=fastbuyzone2o-20"
+    "title": "Under Armour Men's Tech 2.0 Short-Sleeve",
+    "price": "$19.99",
+    "category": "fashion",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B077ZJNZF9.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B077ZJNZF9?tag=fastbuyzone-20"
   },
   {
-    "title": "Women's Soft Breathable Cotton Panties 6-Pack",
-    "brand": "FRUIT OF THE LOOM",
-    "price": "$18.99",
-    "category": "innerwear",
-    "rating": "4.5",
-    "reviews": "120K",
-    "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=500",
-    "link": "https://www.amazon.com/dp/B00VTHVDY4?tag=fastbuyzone2o-20"
+    "title": "Dickies Men's Original 874 Work Pant",
+    "price": "$29.99",
+    "category": "fashion",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B0001YWLYU.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B0001YWLYU?tag=fastbuyzone-20"
   },
   {
-    "title": "Men's Stretch Cotton Boxer Briefs 5-Pack",
-    "brand": "HANES",
-    "price": "$24.98",
-    "category": "innerwear",
-    "rating": "4.6",
-    "reviews": "140K",
-    "image": "https://images.unsplash.com/photo-1586363104862-3a5e2ab60d99?w=500",
-    "link": "https://www.amazon.com/dp/B00ACIG7TY?tag=fastbuyzone2o-20"
+    "title": "JW PEI Women's Gabbi Shoulder Bag",
+    "price": "$79.99",
+    "category": "fashion",
+    "image": "https://images-na.ssl-images-amazon.com/images/P/B08728F9LL.01._SX400_.jpg",
+    "link": "https://www.amazon.com/dp/B08728F9LL?tag=fastbuyzone-20"
   }
 ]
