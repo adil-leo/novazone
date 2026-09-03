@@ -14,6 +14,60 @@
         <p>Top Trending Deals Updated Daily</p>
     </header>
 
+    <!-- Smart Product Finder Section -->
+    <section class="smart-finder-wrapper">
+        <div class="smart-finder-card">
+            <div class="finder-header">
+                <span class="badge">AI ASSISTANT</span>
+                <h2>Smart Product Finder</h2>
+                <p>Find the best deals based on your category, budget, and preference!</p>
+            </div>
+
+            <!-- Step 1: Category Selection -->
+            <div class="finder-step">
+                <label class="step-label">1. Select Category:</label>
+                <div class="options-grid" id="sf-category-options">
+                    <button class="opt-btn active" onclick="sfSelectCategory('all', this)">✨ All Categories</button>
+                    <button class="opt-btn" onclick="sfSelectCategory('tech', this)">⚡ Tech</button>
+                    <button class="opt-btn" onclick="sfSelectCategory('kitchen', this)">🍳 Kitchen</button>
+                    <button class="opt-btn" onclick="sfSelectCategory('beauty', this)">💄 Beauty</button>
+                    <button class="opt-btn" onclick="sfSelectCategory('fashion', this)">👗 Fashion</button>
+                    <button class="opt-btn" onclick="sfSelectCategory('shoes', this)">👟 Shoes</button>
+                    <button class="opt-btn" onclick="sfSelectCategory('toys', this)">🧸 Baby Toys</button>
+                    <button class="opt-btn" onclick="sfSelectCategory('innerwear', this)">🩲 Innerwear</button>
+                </div>
+            </div>
+
+            <!-- Step 2: Budget Filter -->
+            <div class="finder-step">
+                <label class="step-label">2. Max Budget: <span id="sf-budget-value">$200</span></label>
+                <input type="range" id="sf-budget-range" min="10" max="200" step="5" value="200" oninput="sfUpdateBudgetValue(this.value)">
+                <div class="range-labels">
+                    <span>$10</span>
+                    <span>$100</span>
+                    <span>$200+</span>
+                </div>
+            </div>
+
+            <!-- Step 3: Priority Filter -->
+            <div class="finder-step">
+                <label class="step-label">3. Top Priority:</label>
+                <div class="options-grid">
+                    <button class="opt-btn sf-priority-btn active" onclick="sfSetPriority('rating', this)">⭐ Highest Rated</button>
+                    <button class="opt-btn sf-priority-btn" onclick="sfSetPriority('reviews', this)">🔥 Most Popular</button>
+                    <button class="opt-btn sf-priority-btn" onclick="sfSetPriority('cheap', this)">🏷️ Lowest Price</button>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="finder-actions">
+                <button class="btn-reset" onclick="sfResetFinder()">🔄 Reset</button>
+                <button class="btn-search" onclick="sfRunFinder()">🚀 Find My Deals</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navigation Tabs -->
     <nav class="categories">
         <button class="tab-btn active" onclick="filterCategory('all', event)">All Deals</button>
         <button class="tab-btn" onclick="filterCategory('tech', event)">⚡ Tech</button>
@@ -43,6 +97,11 @@
         let currentPage = 1;
         const itemsPerPage = 20;
 
+        // Smart Finder Variables
+        let sfCategory = 'all';
+        let sfMaxBudget = 200;
+        let sfPriority = 'rating';
+
         async function loadDeals() {
             try {
                 const response = await fetch('deals.json');
@@ -57,6 +116,14 @@
         function renderPage() {
             const container = document.getElementById('deals-container');
             container.innerHTML = '';
+
+            if (filteredDeals.length === 0) {
+                container.innerHTML = `<p style="grid-column: 1/-1; text-align: center; font-size: 18px; padding: 40px; color: #a0aec0;">No deals found matching your criteria. Try increasing your budget!</p>`;
+                document.getElementById('page-num').innerText = `Page 1 of 1`;
+                document.getElementById('prev-btn').disabled = true;
+                document.getElementById('next-btn').disabled = true;
+                return;
+            }
 
             const start = (currentPage - 1) * itemsPerPage;
             const end = start + itemsPerPage;
@@ -88,7 +155,7 @@
         function changePage(direction) {
             currentPage += direction;
             renderPage();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            document.getElementById('deals-container').scrollIntoView({ behavior: 'smooth' });
         }
 
         function filterCategory(category, e) {
@@ -100,6 +167,70 @@
             } else {
                 filteredDeals = allDeals.filter(deal => deal.category === category);
             }
+            currentPage = 1;
+            renderPage();
+        }
+
+        // --- Smart Product Finder Logic ---
+        function sfSelectCategory(cat, btn) {
+            sfCategory = cat;
+            document.querySelectorAll('#sf-category-options .opt-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        function sfUpdateBudgetValue(val) {
+            sfMaxBudget = parseFloat(val);
+            document.getElementById('sf-budget-value').innerText = `$${val}`;
+        }
+
+        function sfSetPriority(prio, btn) {
+            sfPriority = prio;
+            document.querySelectorAll('.sf-priority-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+        }
+
+        function sfParseReviews(revStr) {
+            if (!revStr) return 0;
+            let clean = revStr.toString().toUpperCase().replace('K', '').replace(',', '');
+            let num = parseFloat(clean);
+            return revStr.toString().toUpperCase().includes('K') ? num * 1000 : num;
+        }
+
+        function sfRunFinder() {
+            filteredDeals = allDeals.filter(item => {
+                let numericPrice = parseFloat((item.price || '0').replace('$', '').replace(',', ''));
+                let matchesCat = (sfCategory === 'all') || (item.category === sfCategory);
+                let matchesBudget = numericPrice <= sfMaxBudget;
+                return matchesCat && matchesBudget;
+            });
+
+            if (sfPriority === 'rating') {
+                filteredDeals.sort((a, b) => parseFloat(b.rating || 0) - parseFloat(a.rating || 0));
+            } else if (sfPriority === 'reviews') {
+                filteredDeals.sort((a, b) => sfParseReviews(b.reviews) - sfParseReviews(a.reviews));
+            } else if (sfPriority === 'cheap') {
+                filteredDeals.sort((a, b) => parseFloat((a.price || '0').replace('$', '')) - parseFloat((b.price || '0').replace('$', '')));
+            }
+
+            currentPage = 1;
+            renderPage();
+            document.getElementById('deals-container').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function sfResetFinder() {
+            sfCategory = 'all';
+            sfMaxBudget = 200;
+            sfPriority = 'rating';
+            document.getElementById('sf-budget-range').value = 200;
+            document.getElementById('sf-budget-value').innerText = '$200';
+            
+            document.querySelectorAll('#sf-category-options .opt-btn').forEach(b => b.classList.remove('active'));
+            document.querySelector('#sf-category-options .opt-btn').classList.add('active');
+            
+            document.querySelectorAll('.sf-priority-btn').forEach(b => b.classList.remove('active'));
+            document.querySelectorAll('.sf-priority-btn')[0].classList.add('active');
+
+            filteredDeals = [...allDeals];
             currentPage = 1;
             renderPage();
         }

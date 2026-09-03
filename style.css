@@ -35,6 +35,146 @@ header p {
     margin-top: 4px;
 }
 
+/* ==========================================
+   Smart Product Finder Professional Styling
+   ========================================== */
+.smart-finder-wrapper {
+    max-width: 1350px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.smart-finder-card {
+    background: #131921;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border: 1px solid #232f3e;
+}
+
+.finder-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.finder-header .badge {
+    background: #febd69;
+    color: #131921;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.finder-header h2 {
+    margin: 8px 0 4px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.finder-header p {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.finder-step {
+    margin-bottom: 18px;
+    background: #1e2733;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #2d3b4e;
+}
+
+.step-label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #febd69;
+}
+
+.options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+}
+
+.opt-btn {
+    background: #232f3e;
+    border: 1px solid #37475a;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 12px;
+    text-align: center;
+}
+
+.opt-btn:hover, .opt-btn.active {
+    background: #febd69;
+    color: #131921;
+    border-color: #febd69;
+    font-weight: bold;
+}
+
+input[type=range] {
+    width: 100%;
+    accent-color: #febd69;
+    cursor: pointer;
+}
+
+.range-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+.finder-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.btn-search {
+    background: #ffd814;
+    color: #0f1111;
+    border: 1px solid #fcd200;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-search:hover {
+    background: #f7ca00;
+}
+
+.btn-reset {
+    background: transparent;
+    color: #ccc;
+    border: 1px solid #37475a;
+    padding: 10px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.btn-reset:hover {
+    background: #232f3e;
+    color: #fff;
+}
+
+/* ==========================================
+   Navigation & Main Display Layout
+   ========================================== */
 .categories {
     display: flex;
     flex-wrap: wrap;
@@ -159,6 +299,11 @@ header p {
     border: 1px solid #d5d9d9;
     border-radius: 8px;
     cursor: pointer;
+}
+
+.pagination button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
 }
 
 footer {
